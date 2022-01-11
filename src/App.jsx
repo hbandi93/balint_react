@@ -1,10 +1,16 @@
+import { useState } from "react"
+
 const App = () => {
+  let [isLandingPage, setterF] = useState(true);
+
   return (
     <div>
-      <h1>Hello world!</h1>
-      <p className="par">ASD</p>
-      <div id="egyedi"></div>
-      <input type="text" placeholder="password" />
+      <p>Hello</p>
+      <button onClick={() => setterF(!isLandingPage)}>Click me!</button>
+      {isLandingPage ? <div>Landing page</div> : <div>Homepage</div>}
+      <div>
+
+      </div>
     </div>
   );
 }
