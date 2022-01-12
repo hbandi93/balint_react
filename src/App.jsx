@@ -1,9 +1,9 @@
 import { useState } from "react/cjs/react.development";
 
-let [inputValue, setInputValue] = useState("Szöveg");
-console.log("render");
 
 const App = () => {
+  let [inputValue, setInputValue] = useState("Szöveg");
+  console.log("render");
   console.log(inputValue);
   return (
     <div>
